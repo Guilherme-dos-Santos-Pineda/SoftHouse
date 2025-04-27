@@ -124,7 +124,7 @@
                 <div class="input-group">
                     <input type="password" placeholder="Senha" required>
                 </div>
-                <button type="submit" class="auth-btn">Acessar Portal</button>
+                <button type="submit" onclick="logar()" class="auth-btn">Acessar Portal</button>
             </form>
             <div class="form-footer">
                 <a href="#" onclick="showForm('signup-form')">Cadastrar empresa</a>
@@ -185,6 +185,9 @@
             
             // Mostra apenas o formulário solicitado
             document.getElementById(formId).classList.remove('hidden');
+        }
+        function logar(){
+            window.location.href = "/painelDaEmpresa.html"; 
         }
     </script>
 </body>

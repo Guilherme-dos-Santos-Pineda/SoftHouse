@@ -124,7 +124,7 @@
                 <div class="input-group">
                     <input type="password" placeholder="Senha" required>
                 </div>
-                <button type="submit" class="auth-btn">Entrar</button>
+                <button type="submit" class="auth-btn" onclick="logar()">Entrar</button>
             </form>
             <div class="form-footer">
                 <a href="#" onclick="showForm('signup-form')">Criar nova conta</a>
@@ -179,6 +179,9 @@
             
             // Mostra apenas o formulário solicitado
             document.getElementById(formId).classList.remove('hidden');
+        }
+        function logar(){
+            window.location.href = "/painelDoDev.html"; 
         }
     </script>
 </body>
